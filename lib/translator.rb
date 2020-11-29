@@ -5,7 +5,9 @@ emotes = YAML.load(File.read('lib/emoticons.yml'))
 def load_library(file_path)
   emotes = YAML.load(File.read(file_path))
   emotes.map do |key, value|
-    [key, :english => value[0], :japanese => value[1]].to_h
+    value = {:english => value[0], :japanese => value[1]}
+    {key => value}.to_h
+    binding.pry
   end
   # code goes here
 end
