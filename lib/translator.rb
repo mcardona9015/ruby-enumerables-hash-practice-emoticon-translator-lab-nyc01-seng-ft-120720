@@ -7,6 +7,7 @@ def load_library(file_path)
   emotes.map do |key, value|
     new_value = {:english => value[0], :japanese => value[1]}
     {key => new_value}
+  binding.pry
   end
   # code goes here
 end
