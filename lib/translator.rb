@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, search_emote)
       end
     end
   end
-  if return_emote == nil
+  if return_emote.empty?
     puts "Sorry, that emoticon was not found"
   else
     return_emote
