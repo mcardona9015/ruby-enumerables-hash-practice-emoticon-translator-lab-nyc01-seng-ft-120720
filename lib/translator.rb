@@ -31,4 +31,18 @@ end
 
 def get_english_meaning
   # code goes here
+  emotes = load_library(file_path)
+  return_emote = ""
+  emotes.each do |name, languages|
+    languages.each do |language, emote|
+      if emote == search_emote
+        return_emote = languages[:english]
+      end
+    end
+  end
+  if return_emote == ""
+    puts "Sorry, that emoticon was not found"
+  else
+    return_emote
+  end
 end
