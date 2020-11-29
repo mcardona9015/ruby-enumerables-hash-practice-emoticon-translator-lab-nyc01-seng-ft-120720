@@ -22,6 +22,7 @@ def get_japanese_emoticon(file_path, search_emote)
       end
     end
   end
+  return_emote
 end
 
 def get_english_meaning(file_path, search_emote)
@@ -35,4 +36,5 @@ def get_english_meaning(file_path, search_emote)
       end
     end
   end
+  return_emote
 end
