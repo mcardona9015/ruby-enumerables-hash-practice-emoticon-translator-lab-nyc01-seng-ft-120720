@@ -1,7 +1,7 @@
 # require modules here
 require 'yaml'
 require 'pry'
-emotes = YAML.load(File.read(file_path))
+emotes = YAML.load(File.read('lib/emoticons.yml'))
 def load_library(file_path)
   emotes = YAML.load(File.read(file_path))
   emotes.map do |key, value|
