@@ -4,10 +4,9 @@ require 'pry'
 
 def load_library(file_path)
   emotes = YAML.load(File.read(file_path))
-  emotes.each_with_object({}) do |key, value|
+  emotes.collect do |key, value|
     value = {:english => value[0], :japanese => value[1]}
     {key => value}
-
   end
   # code goes here
 end
