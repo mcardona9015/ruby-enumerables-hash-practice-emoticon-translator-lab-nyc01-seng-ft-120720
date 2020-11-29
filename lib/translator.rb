@@ -11,7 +11,6 @@ def load_library(file_path)
   # code goes here
 end
 emotes = load_library("lib/emoticons.yml")
-binding.pry
 def get_japanese_emoticon(file_path, search_emote)
   emotes = load_library(file_path)
   return_emote = ""
