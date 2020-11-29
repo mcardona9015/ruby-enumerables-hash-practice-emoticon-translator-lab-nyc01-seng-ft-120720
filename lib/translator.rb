@@ -10,7 +10,7 @@ def load_library(file_path)
   emotes
   # code goes here
 end
-emotes = load_library(file_path)
+emotes = load_library("lib/emoticons.yml")
 binding.pry
 def get_japanese_emoticon(file_path, emote)
   emotes = load_library(file_path)
