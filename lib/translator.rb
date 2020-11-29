@@ -8,6 +8,7 @@ def load_library(file_path)
   emotes.map do |key, value|
     value = {:english => value[0], :japanese => value[1]}
     new_emotes << {key => value}
+  new_emotes.flatten
 
 
   end
