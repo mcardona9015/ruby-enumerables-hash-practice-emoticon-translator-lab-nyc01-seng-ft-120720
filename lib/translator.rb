@@ -7,7 +7,7 @@ def load_library(file_path)
   emotes.each_with_object({}) do |key, value|
     value = {:english => value[0], :japanese => value[1]}
     {key => value}
-    binding.pry
+    
   end
   # code goes here
 end
@@ -19,3 +19,4 @@ end
 def get_english_meaning
   # code goes here
 end
+binding.pry
