@@ -14,7 +14,6 @@ emotes = load_library(file_path)
 binding.pry
 def get_japanese_emoticon(file_path, emote)
   emotes = load_library(file_path)
-  if emotes.values.val
   # code goes here
 end
 
