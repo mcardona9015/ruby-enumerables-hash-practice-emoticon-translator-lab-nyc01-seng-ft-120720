@@ -18,7 +18,7 @@ def get_japanese_emoticon(file_path, search_emote)
   emotes.each do |name, languages|
     languages.each do |language, emote|
       if emote == search_emote
-        return_emote = languages[:japanese]
+        return_emote = name
       end
     end
   end
