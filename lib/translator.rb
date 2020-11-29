@@ -6,7 +6,7 @@ def load_library(file_path)
   emotes = YAML.load(File.read(file_path))
   emotes.collect do |key, value|
     value = {:english => value[0], :japanese => value[1]}
-    {key => value}
+    {key => value}.shift.strip
   end
   # code goes here
 end
