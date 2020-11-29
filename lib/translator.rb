@@ -1,7 +1,7 @@
 # require modules here
 require 'yaml'
 require 'pry'
-emotes = YAML.load(File.read('lib/emoticons.yml'))
+
 def load_library(file_path)
   emotes = YAML.load(File.read(file_path))
   emotes.map do |key, value|
@@ -11,7 +11,9 @@ def load_library(file_path)
   # code goes here
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, emote)
+  emotes = load_library(file_path)
+  binding.pry
   # code goes here
 end
 
